@@ -1,1 +1,40 @@
-recaptcha,hcaptcha,solvemedia
+Header -done
+footer-done
+carres page-done
+
+
+
+
+
+captcha = recaptcha ,hcaptcha,solvemedia
+
+
+<script src="https://cdn.jsdelivr.net/npm/@hcaptcha/vanilla-hcaptcha"></script>
+
+<h-captcha id="signupCaptcha"
+           site-key="781559eb-513a-4bae-8d29-d4af340e3624"
+           size="normal"
+           tabindex="0"></h-captcha>
+
+<script>
+    const signupCaptcha = document.getElementById('signupCaptcha');
+
+    signupCaptcha.addEventListener('verified', (e) => {
+        console.log('verified event', {token: e.token});
+    });
+    signupCaptcha.addEventListener('error', (e) => {
+        console.log('error event', {error: e.error});
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+razorpay = https://chatgpt.com/share/673440ea-8640-8010-8211-223b8107280c
